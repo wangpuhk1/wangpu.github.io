@@ -1,0 +1,13 @@
+1.
+ls
+ls (hd0,x)/boot/grub
+
+2. 
+grub rescue>set root=(hd0,x,)
+grub rescue>set prefix=(hd0,x)/boot/grub
+grub rescue>insmod normal
+grub rescue>normal
+
+3.
+sudo update-grub
+sudo grub-install /dev/sda
